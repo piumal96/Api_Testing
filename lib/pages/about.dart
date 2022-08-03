@@ -24,7 +24,14 @@ class _AboutState extends State<About> {
       count++;
     });
   }
+  @override
+  void initState(){
+    super.initState();
+  }
 
+  void dispose(){
+    super.dispose();
+  }
   @override
   Widget build(BuildContext context) {
     final AboutArgument args =
