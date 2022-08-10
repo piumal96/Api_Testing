@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:testapp/pages/about.dart';
 import 'package:testapp/pages/rocket.dart';
+import 'package:testapp/pages/rockets.dart';
 
 class Home extends StatelessWidget {
   final Function(bool)? toggleDarkMode;
@@ -33,16 +34,11 @@ class Home extends StatelessWidget {
                   Navigator.of(context).pushNamed(About.routeName,
                       arguments: AboutArgument(name: "Deves"));
                 },
-                child: Text("About")),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.of(context).pushNamed(About.routeName,
-                      arguments: AboutArgument(name: "Deves"));
-                },
+
                 child: Text("About")),
             OutlinedButton(onPressed: (){
-              Navigator.of(context).pushNamed(RocketPage.routeName);
-            }, child: Text("Rocke Page"))
+              Navigator.of(context).pushNamed(Rockets.routeName);
+            }, child: Text("Rocket Page"))
           ],
         ),
       ),
